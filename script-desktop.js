@@ -17,19 +17,19 @@ let hadag = document.getElementById("hadag");
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
 
-  if (window.matchMedia("(max-width: 480px)").matches) {
-    // load script for small mobile devices
-    // text.style.backgroundColor = "red";
-    text.style.top = 100 + value * -0.4 + "%";
-  } else if (window.matchMedia("(max-width: 768px)").matches) {
-    // load script for medium mobile devices
-    // text.style.backgroundColor = "blue";
-    text.style.top = 100 + value * -0.4 + "%";
-  } else {
-    // load script for large mobile devices
-    // text.style.backgroundColor = "green";
-    text.style.top = value * -3 + "px";
-  }
+  // if (window.matchMedia("(max-width: 480px)").matches) {
+  //   // load script for small mobile devices
+  //   // text.style.backgroundColor = "red";
+  //   text.style.top = 100 + value * -0.4 + "%";
+  // } else if (window.matchMedia("(max-width: 768px)").matches) {
+  //   // load script for medium mobile devices
+  //   // text.style.backgroundColor = "blue";
+  //   text.style.top = 100 + value * -0.4 + "%";
+  // } else {
+  //   // load script for large mobile devices
+  //   // text.style.backgroundColor = "green";
+  //   text.style.top = value * -3 + "px";
+  // }
 
   header.style.top = value * 0.5 + "px";
 });
